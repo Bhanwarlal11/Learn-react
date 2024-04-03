@@ -84,7 +84,8 @@
 - `**Note :**` npm does not stand for node package manager but everything else. `Node package manager is not a full form of NPM` (It stands for anything but not a abbreviation for node package manager)
 - `npm` alternative is `yarn`
 - `How to initialize npm ?`
- ```npm init```
+```npm init
+```
 - ``npm init -y`` can be used to skip the setup step, npm takes care of it and creates the `package.json` json file automatically , but without configurations.
 
 
