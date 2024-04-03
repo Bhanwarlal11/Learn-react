@@ -65,41 +65,21 @@
 - [Parcel on Production](https://parceljs.org/features/production/)
 - [BrowsersList](https://browserslist.dev/)
 
--
--
--
--
--
--
--
--
--
--
--
--
--
--
--
+## ⬇️⤵️
+## ⏬🔽
 
 ## `Theory assignment solution :`
--
--
--
 
 ## What is `NPM` ?
 
-- It is a tool used for package management and the default package manager for Node projects. NPM is installed when NodeJS is installed on a machine. 
+- It is a tool used for package management and the default package manager for Node projects. NPM is installed when NodeJS is installed on a machine.
 - It comes with a command-line interface (CLI) used to interact with the online database of NPM. This database is called the NPM Registry, and it hosts public and private
 - 'packages.' To add or update packages, we use the NPM CLI to interact with this database.
 - We use NPM because we want a lot of packages in our Projects/React App.
 - `Note :` npm does not stand for node package manager but everything else.
 - npm alternative is yarn
 - PS: `Node package manager is not a full form of NPM` (It stands for anything but not a abbreviation for node package manager)
--
--
--
--
--
+
 
 ## What is `Parcel/Webpack`? Why do we need it?
 
