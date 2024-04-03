@@ -113,7 +113,9 @@ ReactDOM.render( listElement, document.querySelector( '#root' ) );
 
 > The `async` and `defer` attributes in the script tag control how scripts are loaded and executed on a web page.
  **Async** loads the script asynchronously without blocking the rendering of the page.
+
  `<script async src="script.js"></script>`
 
 > **Defer** also loads the script asynchronously but ensures the script is executed in the order they appear in the HTML document after the page is fully parsed.
+
  `<script defer src="script.js"></script>`
