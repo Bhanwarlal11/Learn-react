@@ -1,9 +1,105 @@
+# Chapter 02 - Igniting our app
+
+## `Theory Questions :`
+
+- What is `NPM`?
+
+- What is `Parcel/Webpack`? Why do we need it?
+
+- What is `.parcel-cache`?
+
+- What is `npx` ?
+
+- What is `difference` between `dependencies` vs `devDependencies`
+
+- What is `Tree Shaking`?
+
+- What is `Hot Module Replacement`?
+
+- List down your `favorite 5 superpowers of Parcel` and `describe any 3` of them in your
+  own words.
+
+- What is `.gitignore`? What should `we add` and `not add` into it?
+
+- What is the `difference` between `package.json` and `package-lock.json`
+
+- Why should I not modify `package-lock.json`?
+
+- What is `node_modules` ? Is it a `good idea to push that on git`?
+
+- What is the `dist` folder?
+
+- What is `browserlists`
+
+- Read about `dif bundlers`: `vite`, `webpack`, `parcel`
+
+- Read about: `^` - `caret` and `~` - `tilde`
+
+- Read about `Script types in html` (MDN Docs)
+
+## Installation tasks:
+
+- In your `existing project`
+- initialize `npm` into your `repo`
+
+  - install `react` and `react-dom`
+
+  - `remove CDN` links of `react`
+
+  - `install parcel`
+
+  - `ignite your app` with parcel
+
+  - add scripts for `“start”` and `“build”` with `parcel commands`
+
+  - add `.gitignore` file
+
+  - add `browserlists`
+
+  - `build a production version` of your code using `parcel build`
+
+- References:
+
+- [Creating your own create-react-app](https://medium.com/@JedaiSaboteur/creating-a-react-app-from-scratch-f3c693b84658)
+- [Parcel Documentation](https://parceljs.org/getting-started/webapp/)
+- [Parcel on Production](https://parceljs.org/features/production/)
+- [BrowsersList](https://browserslist.dev/)
+
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+
 ## `Theory assignment solution :`
+-
+-
+-
 
 ## What is `NPM` ?
 
-NPM is like a tool that helps developers to manage the packages, it's like a big collection of tools and building blocks that makes it easier to create a cool stuff on the internet.
+It is a tool used for package management and the default package manager for Node projects. NPM is installed when NodeJS is installed on a machine. It comes
+with a command-line interface (CLI) used to interact with the online database of NPM. This database is called the NPM Registry, and it hosts public and private
+'packages.' To add or update packages, we use the NPM CLI to interact with this database.
+We use NPM because we want a lot of packages in our Projects/React App.
+`Note :` npm does not stand for node package manager but everything else.
+npm alternative is yarn
 PS: `Node package manager is not a full form of NPM` (It stands for anything but not a abbreviation for node package manager)
+-
+-
+-
+-
+-
 
 ## What is `Parcel/Webpack`? Why do we need it?
 
@@ -34,6 +130,7 @@ PS: `Node package manager is not a full form of NPM` (It stands for anything but
 ## List down your `favorite 5 superpowers of Parcel` and `describe any 3` of them in your own words.
 
 `superpowers of parcel`:
+
 - `HMR (Hot module replacement)` - parcel allows to see changes in the code immediately without having to manually refresh the entire page.
 - `Diagnostic` - parcel make errors looks beautiful with some color and it indicates the exact line where the error is occured.
 - `Tree shaking` - parcel removes the unwanted code(dead code) that we do not use while developing the application.
@@ -45,12 +142,15 @@ PS: `Node package manager is not a full form of NPM` (It stands for anything but
 `gitignore` is a text file that holds which files or folders needs to be ignored in a project during commit to the repository. any files or folder that can be regenerated in our app needa to be added in the `gitignore` file, `package.json` and `package-lock.json` files should not be included in the gitignore file.
 
 The entries in this file can also follow a matching pattern.
+
 ```
 * is used as a wildcard match
 / is used to ignore pathnames relative to the .gitignore file
 # is used to add comments to a .gitignore file
 ```
+
 This is an example of what the .gitignore file could look like:
+
 ```
 # Ignore Mac system files
 .DS_store
@@ -90,13 +190,13 @@ The `/dist` folder contains the minimized version of the source code. The code p
 
 `Browserlist `is a tool that allows to us tell react that what are the browser that our project/app should support, for that we need to modify `package.json`.
 
-`Ex`: 
+`Ex`:
 
-In the package.json we need to modify like below: 
+In the package.json we need to modify like below:
 
 ```
 "browserslist" : [
-    "last 2 version"  
+    "last 2 version"
 ]
 ```
 

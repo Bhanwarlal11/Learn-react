@@ -63,4 +63,4 @@ Finally, I learned all the features of Parcel, including -
 - Image optimization: Automatically optimizes images to reduce their size without sacrificing quality, improving page load times.
 - Caching: Speeds up development by caching assets and only rebuilding when necessary, improving build times.
 - Compression: Reduces the size of your assets, making them faster to download and improving page load times.
-- Tree shaking: Eliminates unused code from your final build, reducing its size and improving performance.
+- Tree shaking: Tree shaking is a technique used in JavaScript module bundlers, such as Webpack or Parcel, to eliminate unused code from the final bundled output. It helps optimize the bundle size by removing dead or unreachable code.
