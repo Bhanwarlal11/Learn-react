@@ -85,14 +85,36 @@
 - `npm` alternative is `yarn`
 - `How to initialize npm ?`
 - `npm init`
-- ``npm init -y`` can be used to skip the setup step, npm takes care of it and creates the `package.json` json file automatically , but without configurations.
-
+- `npm init -y` can be used to skip the setup step, npm takes care of it and creates the `package.json` json file automatically , but without configurations.
 
 ## What is `Parcel/Webpack`? Why do we need it?
 
 - `parcel`: Parcel is a tool that helps web developers bundle all the different files and code for a website or app together in a way that makes it faster to load and run. It's really easy to set up and works well for simple projects.
 
 - `Webpack`: Webpack is another tool that does a similar job but gives developers more control over how things are bundled. It's more powerful and flexible, which makes it a good choice for complex projects where customization is important.
+- `Parcel and webpack` are the bundlers used mostly for JavaScript or Typescript code that helps you to minify, clean, and make your code compact so that it becomes easier to send a request or receive the response from the server when it usually takes you to transfer multiple files without using any bundler for loading the page of your application.
+
+**Parcel Features:**
+
+- HMR (Hot Module Replacement): Enables real-time changes to your code without needing to refresh the entire page, making development faster and more efficient.
+- File watcher algorithm in C++: A performant file watcher that efficiently tracks changes to your code and rebuilds only what's necessary.
+- Bundling: Combines all of your code and dependencies into a single file, making it easier to deploy and reducing page load times.
+- Code minification: Reduces the size of your code by removing unnecessary whitespace and renaming variables, making it faster to download and execute.
+- Image optimization: Automatically optimizes images to reduce their size without sacrificing quality, improving page load times.
+- Caching: Speeds up development by caching assets and only rebuilding when necessary, improving build times.
+- Compression: Reduces the size of your assets, making them faster to download and improving page load times.
+- Tree shaking: Tree shaking is a technique used in JavaScript module bundlers, such as Webpack or Parcel, to eliminate unused code from the final bundled output. It helps optimize the bundle size by removing dead or unreachable code.
+
+**installation commands:**
+`npm install -D parcel`
+
+- `D` is used for development and as a development dependency.
+
+_Parcel Commands :_
+- For development build:
+`npx parcel <entry_point>`
+- For production build :
+`npx parcel build <entry_point>`
 
 ## What is `.parcel-cache`?
 
