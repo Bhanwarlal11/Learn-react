@@ -96,14 +96,14 @@
 
 **Parcel Features:**
 
-- HMR (Hot Module Replacement): Enables real-time changes to your code without needing to refresh the entire page, making development faster and more efficient.
-- File watcher algorithm in C++: A performant file watcher that efficiently tracks changes to your code and rebuilds only what's necessary.
+- `HMR (Hot Module Replacement):` Enables real-time changes to your code without needing to refresh the entire page, making development faster and more efficient.
+- `File watcher algorithm in C++:` A performant file watcher that efficiently tracks changes to your code and rebuilds only what's necessary.
 - Bundling: Combines all of your code and dependencies into a single file, making it easier to deploy and reducing page load times.
-- Code minification: Reduces the size of your code by removing unnecessary whitespace and renaming variables, making it faster to download and execute.
-- Image optimization: Automatically optimizes images to reduce their size without sacrificing quality, improving page load times.
-- Caching: Speeds up development by caching assets and only rebuilding when necessary, improving build times.
-- Compression: Reduces the size of your assets, making them faster to download and improving page load times.
-- Tree shaking: Tree shaking is a technique used in JavaScript module bundlers, such as Webpack or Parcel, to eliminate unused code from the final bundled output. It helps optimize the bundle size by removing dead or unreachable code.
+- `Code minification:` Reduces the size of your code by removing unnecessary whitespace and renaming variables, making it faster to download and execute.
+- `Image optimization:` Automatically optimizes images to reduce their size without sacrificing quality, improving page load times.
+- `Caching:` Speeds up development by caching assets and only rebuilding when necessary, improving build times.
+- `Compression:` Reduces the size of your assets, making them faster to download and improving page load times.
+- `Tree shaking:` Tree shaking is a technique used in JavaScript module bundlers, such as Webpack or Parcel, to eliminate unused code from the final bundled output. It helps optimize the bundle size by removing dead or unreachable code.
 
 **installation commands:**
 `npm install -D parcel`
@@ -111,14 +111,17 @@
 - `D` is used for development and as a development dependency.
 
 _Parcel Commands :_
+
 - For development build:
-`npx parcel <entry_point>`
+  `npx parcel <entry_point>`
 - For production build :
-`npx parcel build <entry_point>`
+  `npx parcel build <entry_point>`
 
 ## What is `.parcel-cache`?
 
 `.parcel-cache` is used by parcel(bundler) to reduce the building time. It stores information about your project when parcel builds it, so that when it rebuilds, it doesn't have to re-parse and re-analyze everything from scratch. It's a key reason why parcel can be so fast in development mode.
+
+- The dist folder contains the output of Parcel and the content of that folder is served by the web server.
 
 ## What is `npx` ?
 
@@ -126,7 +129,8 @@ _Parcel Commands :_
 
 ## What is `difference` between `dependencies` vs `devDependencies`
 
-`Dependencies` should contain library and framework in which your app is built on, needs to function effectively. such as `Vue`, `React`, `Angular`, `Express`, `JQuery` and etc. `DevDependencies` should contain modules/packages a developer needs during development. such as, `parcel`, `webpack`, `vite`, `mocha`. These packages are necessary only need while you are developing your project, not necessary on production.
+- `Dependencies` should contain library and framework in which your app is built on, needs to function effectively. such as `Vue`, `React`, `Angular`, `Express`, `JQuery` and etc.
+- `DevDependencies` should contain modules/packages a developer needs during development. such as, `parcel`, `webpack`, `vite`, `mocha`. These packages are necessary only need while you are developing your project, not necessary on production.
 
 ## What is `Tree Shaking`?
 
